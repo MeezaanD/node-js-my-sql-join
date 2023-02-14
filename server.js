@@ -20,6 +20,18 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to the boys application." });
 });
 
+app.post("/", (req, res) => {
+    res.json({});
+});
+
+app.put("/", (req, res) => {
+    res.json({})
+});
+
+app.delete("/", (req, res) => {
+    res.json({})
+});
+
 require("./app/routes/tutorial.routes.js")(app);
 
 // set port, listen for requests
